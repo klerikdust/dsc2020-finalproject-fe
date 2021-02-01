@@ -1,0 +1,51 @@
+:root {
+    --text: rgb(98, 98, 98)
+}
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    background-color: #f3f3f3;
+}
+
+/**
+ * -------------------
+ * NAVIGATION BAR
+ * -------------------
+ */
+header {
+    background-color:rgb(255, 255, 255);
+}
+.nav-container {
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+}
+.nav-container .title {
+    font-size: 36;
+    font-weight: 700;
+    margin-top: 25px;
+    text-decoration: none;
+    color: var(--text);
+    float: left
+}
+nav {
+    float: right;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav ul li {
+    text-align: right;
+    margin: 25px 0 0 35px;
+    font-weight: 600;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--text)
+}
