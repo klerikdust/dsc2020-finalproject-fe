@@ -5,19 +5,66 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="/js/pageSwitch.js"></script>
+    <script type="module" src="/js/overview.js"></script>
     <title>Covid Tracker</title>
 </head>
 <body>
     <header>
         <div class="nav-container">
             <a href="#" class="title">COVID-19</a>
+            <div id="burger-menu" class="burger-menu">
+                <div class="burger-menu-shape"></div>
+                <div class="burger-menu-shape"></div>
+                <div class="burger-menu-shape"></div>
+            </div>
+            <div id="burger-card" class="burger-card">
+                <ul>
+                    <li><a class="active-view" href="#">Home</a></li>
+                    <li><a href="/views/dataProvinsi.html">Province Data</a></li>
+                </ul>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#" class="beranda">Beranda</a></li>
-                    <li><a href="#" class="data-prov">Data Provinsi</a></li>
+                    <li><a class="active-view" href="#">Home</a></li>
+                    <li><a href="/views/dataProvinsi.html">Province Data</a></li>
                 </ul>
             <nav>
         </div>
     </header>
+    <div class="home">
+        <div class="loading" id="loading">
+            <img src="/assets/loading.svg" id="loading-spin" alt="loading-spin">
+        </div>
+        <div class="title">
+            <p class="first">INDONESIA</p>
+            <p class="second">TANGGAP COVID-19</p>
+            <p class="caption">Layanan Darurat - 0811 1211 2112</p>
+        </div>
+        <div class="stats">
+            <div class="total-cases">
+                <h1 id="total-cases"></h1>
+                <p>Total Cases</p>
+            </div>
+            <ul class="substats">
+                <li class="positive">
+                    <h1 id="positive"></h1>
+                    <p>Positive</p>
+                </li>
+                <li class="recovered">
+                    <h1 id="recovered"></h1>
+                    <p>Recovered</p>
+                </li>
+                <li class="death">
+                    <h1 id="death"></h1>
+                    <p>Deaths</p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>"Wujudkan Indonesia Sehat, Aman, dan Produktif!"</p>
+        </div>
+    </div>
+    <script src="/js/mobileNav.js"></script>
 </body>
 </html>
