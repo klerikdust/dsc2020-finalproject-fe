@@ -348,6 +348,15 @@ nav li .active-view {
  * -------------------
  */
 @media only screen and (max-width: 800px) {
+    .provincies {
+        max-width: 1200;
+        width: 90vw;
+        padding: 0;
+    }
+    .searchbar {
+        max-width: 300;
+        width: 90vw;
+    }
     .nav-container .title {
         font-size: 20;
     }
@@ -403,5 +412,24 @@ nav li .active-view {
     }
     .burger-card li .active-view {
         font-weight: 900;
+    }
+    .cari-provinsi-title {
+        font-size: 3em;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .cari-provinsi-title {
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width: 190px) {
+    .provincies li {
+        padding: 0;
+    }
+    .provincies li h1 {
+        font-size: 1em;
+    }
+    .cari-provinsi-title {
+        font-size: 1.5em;
     }
 }
