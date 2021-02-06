@@ -49,7 +49,7 @@ window.onload = () => {
             //  Handle if user hasn't inputted any keyword
             const keyword = document.getElementById(`searchbar`).value
             provinces.innerHTML = ``
-            const result = src.data.filter(n => n.provinsi.includes(keyword))
+            const result = src.data.filter(n => n.provinsi.toLowerCase().includes(keyword.toLowerCase()))
             if (result.length <= 0) return header.innerHTML = `Oops, no result...`
             //  Handle if user hasn't filtered anything
             if (result.length === src.data.length) return refreshProvincesListState()
